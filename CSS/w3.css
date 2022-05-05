@@ -1,0 +1,536 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    background: linear-gradient(rgb(40, 42, 53, 0.90),rgb(40, 42, 53, 0.90)),url(../Assets/background-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+     background-repeat: no-repeat;
+     background-position: center;
+     overflow-y: hidden;
+}
+marquee{
+    color: whitesmoke;
+}
+ .container .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 5%;
+
+}
+ .container .navbar img{
+    width: 50px;
+}
+.container .navbar a{
+    text-decoration: none;
+}
+ .container .navbar p{
+    border: 1px solid green;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+   
+    color: whitesmoke;
+    font-size: 20px;
+}
+ .container .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 12% 0;
+    gap: 30px;
+    
+
+}
+ .container .item h1{
+    font-size: 50px;
+    color: whitesmoke;
+}
+ .container .item h4{
+    font-size: 23px;
+    color: whitesmoke;
+}
+ .container .item p{
+    font-size: 18px;
+  color: whitesmoke;
+}
+.container .item span{
+    color: #FFC0C7;
+}
+
+.container .item a{
+    text-decoration: none;
+  }
+ .container .item .text {
+      border: 1px solid;
+      width: 250px;
+      height: 50px;
+      background-color: #04aa6d;
+
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: whitesmoke;
+  }
+
+  @media(max-width:1700px){
+ 
+    .container .item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 9% auto;
+        gap: 30px;
+    
+    }
+    .container .item h1{
+        font-size: 35px;
+       
+    }
+     .container .item h4{
+        font-size: 18px;
+     
+    }
+     .container .item p{
+        font-size: 15px;
+   
+    }
+    .container .item .text {
+        border: none;
+      }
+  
+  }
+
+  @media(max-width:1100px){
+    .container{
+        width: 100%;
+        height: 55vh;
+       }
+ 
+    .container .item{
+       margin: 9% auto;
+       
+ }
+ .container .item h1{
+    font-size: 50px;
+    color: whitesmoke;
+}
+ .container .item h4{
+    font-size: 23px;
+    color: whitesmoke;
+}
+ .container .item p{
+    font-size: 18px;
+  color: whitesmoke;
+}
+}
+@media(max-width:800px){
+    .container{
+      
+        width: 100%;
+        height: 50vh;
+         
+    }
+    .container .item{
+        margin: 17% auto;
+        
+  }
+    .container .item h1{
+        font-size: 40px;
+        color: whitesmoke;
+    }
+     .container .item h4{
+        font-size: 20px;
+        color: whitesmoke;
+    }
+     .container .item p{
+        font-size: 15px;
+      color: whitesmoke;
+    }
+}
+@media(max-width:600px){
+    .container .item{
+        margin: 30% auto;
+        
+  }
+    .container .item h1{
+        font-size: 30px;
+     
+    }
+     .container .item h4{
+        font-size: 17px;
+    
+    }
+     .container .item p{
+        font-size: 12px;
+     
+    }
+    .container .item .text {
+        border: none;
+        width: 400px;
+        height: 50px;
+        background-color: #04aa6d;
+  
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: whitesmoke;
+    }
+}
+  /* ............container end.......... */
+
+  .content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 4% 3%;
+      gap: 100px;
+      padding: 0 10%;
+  }
+
+  .content .item1{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+  }
+  .content .item1  h4{
+    color: #04aa6d;
+    font-size: 40px;
+}
+ .content .item1 p{
+    font-size:25px ;
+}
+.content .item1 span{
+    color: white;
+}
+
+@media(max-width:1700px){
+      .content .item1  h4{
+        color: #04aa6d;
+        font-size: 20px;
+    }
+     .content .item1 p{
+        font-size:15px ;
+    }
+}
+
+    @media(max-width:1100px){
+        .content{
+            margin: 5% auto;
+            gap: 80px;
+           flex-wrap: wrap;
+        }
+      
+        .content .item1{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            align-items: center;
+        }
+        .content .item1  h4{
+          color: #04aa6d;
+          font-size: 25px;
+      }
+       .content .item1 p{
+          font-size:18px ;
+      }
+     
+    }
+    @media(max-width:800px){
+        .content{
+            margin: 5% auto;
+            gap: 30px;
+           flex-wrap: wrap;
+           width: 100%;
+           height: 25vh;
+        }
+      
+     
+        .content .item1  h4{
+          color: #04aa6d;
+          font-size: 20px;
+      }
+       .content .item1 p{
+          font-size:15px ;
+      }
+     
+    }
+
+    @media(max-width:500px){
+        .content{
+         display: flex;
+         align-items:center;
+         /* flex-direction: column; */
+         justify-content: center;
+         gap: 50px;
+         width: 100%;
+         height: 70vh;
+        
+        }
+    }
+
+/* <!-- **************content end************* --> */
+
+
+
+.howitworks{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+
+}
+.howitworks .container{
+    display: flex;
+    flex-direction: column;
+    background:#282a35;
+    width: 100%;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+ }
+.howitworks .container h2{
+    color: whitesmoke;
+   font-size: 30px;
+}
+
+.howitworks .container .images{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+   
+  }
+ .howitworks .container .data{
+    display: flex;
+    gap: 100px;
+    margin-left: 22px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.howitworks .container .data p{
+    color: whitesmoke;
+    text-align: center;
+}
+
+@media(max-width:1100px){
+    .howitworks .container{
+            width: 100%;
+            height: 35vh;
+             
+     }
+    
+     .howitworks .container .data p{
+     font-size: 12px;
+    }
+    
+    
+}
+@media(max-width:800px){
+    .howitworks .container{
+        display: flex;
+        flex-direction: column;
+        background:#282a35;
+        width: 100%;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+     }
+
+    .howitworks .container h2{
+        color: whitesmoke;
+       font-size: 30px;
+    }
+    
+    .howitworks .container .images{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+        flex-direction: column;
+      
+      }
+      .howitworks .container .images .a{
+          display: none;
+
+      }
+    .howitworks .container .data{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        margin-left: 22px;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+}
+
+/* <!-- **************howitworks end************* --> */
+
+
+
+.main{
+    background-color: azure;
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 50px;
+    overflow-y: hidden;
+    position: relative;
+   
+   
+}
+
+.main  h1{
+color: #282a35;
+font-size: 30px;
+padding-top: 100px;
+overflow-y: hidden;
+}
+.main .start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow-y: hidden;
+}
+.main .start h4{
+    overflow-y: hidden;
+}
+.main .start .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow-y: hidden;
+}
+.main .start .card img{
+    width: 50px;
+}
+.main .total{
+    width: 80%;
+    height: 70vh;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 100px;
+    margin-top: 3%;
+    padding: 100px 50px;
+    overflow-y: hidden;
+}
+
+.main .prices{
+   
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+
+
+}
+.main .prices .cost{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+   
+}
+.main .prices .cost h2{
+    font-size: 40px;
+}
+.main .prices .cost h4{
+    font-size: 25px;
+    font-weight: bold;
+}
+.main .prices .cost h4{
+    font-size: 25px;
+    font-weight: bold;
+}
+.main .prices .cost p{
+    font-size: 25px;
+  
+}
+.main .prices .info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    overflow-y: hidden;
+}
+.main .prices .info .infor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+}
+.main .prices .info .infor img{
+    width: 20px;
+}
+.main .prices .info .infor p{
+    font-size: 13px;
+}
+.main .prices .info button{
+    width:200px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #04aa6d;
+    color: whitesmoke;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 50px;
+}
+.main .prices .line{
+    width: 10px;
+    height: 30vh;
+}
+.main  .line img{
+    width: 100%;
+    height: 100%;
+}
+.free{
+    background-color: #282a35;
+    width: 20%;
+    height: 75vh;
+    position:absolute;
+    top: 230%;
+    left: 20%;
+    border-radius: 20px;
+
+}
+ 

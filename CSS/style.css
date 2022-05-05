@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.logo{
+  display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 500px;
+    background: transparent;
+overflow-y: hidden;
+position: relative;
+}
+.logo img{
+    width: 50px;
+}
+
+.background-img {
+  background-image: url(../Assets/background-img.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 95vh;
+  filter: blur(5px);
+  position: absolute;
+  top: 0;
+
+
+}
+
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
