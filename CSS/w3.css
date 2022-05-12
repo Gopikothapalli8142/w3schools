@@ -13,7 +13,7 @@ body{
     background-size: cover;
     width: 100%;
     height: 95vh;
-     background-repeat: no-repeat;
+     background-repeat: no-repeat; 
      background-position: center;
      overflow-y: hidden;
 }
@@ -34,7 +34,7 @@ marquee{
     text-decoration: none;
 }
  .container .navbar p{
-    border: 1px solid green;
+    border: 3px solid green;
     width: 120px;
     height: 40px;
     display: flex;
@@ -45,6 +45,7 @@ marquee{
     color: whitesmoke;
     font-size: 20px;
 }
+
  .container .item{
     display: flex;
     flex-direction: column;
@@ -162,6 +163,9 @@ marquee{
         font-size: 15px;
       color: whitesmoke;
     }
+    .container .navbar .burger {
+        display: block;
+    }
 }
 @media(max-width:600px){
     .container .item{
@@ -211,6 +215,7 @@ marquee{
       justify-content: center;
       align-items: center;
       gap: 10px;
+      width:20%
   }
   .content .item1  h4{
     color: #04aa6d;
@@ -325,6 +330,9 @@ marquee{
 
    
   }
+  .howitworks .container .images1{
+      display: none;
+  }
  .howitworks .container .data{
     display: flex;
     gap: 100px;
@@ -357,37 +365,25 @@ marquee{
         flex-direction: column;
         background:#282a35;
         width: 100%;
-        height: 80vh;
+        height: 90vh;
         justify-content: center;
         align-items: center;
-        gap: 70px;
+        gap: 50px;
      }
 
     .howitworks .container h2{
         color: whitesmoke;
        font-size: 30px;
     }
-    
     .howitworks .container .images{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 30px;
-        flex-direction: column;
-      
-      }
-      .howitworks .container .images .a{
-          display: none;
-
-      }
+        display: none;
+    }
     .howitworks .container .data{
-        display: flex;
-        flex-direction: column;
-        gap: 100px;
-        margin-left: 22px;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
+        display: none;
+    }
+    .howitworks .container .images1{
+        display: block;
+       text-align: center;
     }
 }
 
@@ -398,7 +394,7 @@ marquee{
 .main{
     background-color: azure;
     width: 100%;
-    height: 130vh;
+    /* height: 130vh; */
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -406,6 +402,7 @@ marquee{
     gap: 50px;
     overflow-y: hidden;
     position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
    
    
 }
@@ -439,98 +436,166 @@ overflow-y: hidden;
 }
 .main .total{
     width: 80%;
-    height: 70vh;
+    /* height: 95vh; */
     background-color: white;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-start;
     gap: 100px;
-    margin-top: 3%;
-    padding: 100px 50px;
-    overflow-y: hidden;
-}
-
-.main .prices{
    
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 30px;
-
-
+    overflow-y: hidden;
+    box-sizing: border-box;
+    
+   border-radius: 20px;
 }
-.main .prices .cost{
+.main .total .price{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    margin: 2%;
+    gap: 110px;
+    margin-left: 35%;
+    
+}
+.main .total .free{
+    background-color: #282a35;
+    width:25%;
+    height: 97vh;
+    position: absolute;
+    top: 27%;
+    left: 11%;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-start;
     justify-content: flex-start;
-    align-items: flex-start;
-    gap: 20px;
-   
-}
-.main .prices .cost h2{
-    font-size: 40px;
-}
-.main .prices .cost h4{
-    font-size: 25px;
-    font-weight: bold;
-}
-.main .prices .cost h4{
-    font-size: 25px;
-    font-weight: bold;
-}
-.main .prices .cost p{
-    font-size: 25px;
-  
-}
-.main .prices .info{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    gap: 25px;
-    overflow-y: hidden;
+    gap: 20px;
+    
 }
-.main .prices .info .infor{
-    display: flex;
-    justify-content: center;
+.main  .free button{
+    width: 80%;
+    height: 8vh;
+    /* padding-top: 5%; */
     align-items: center;
-    gap: 10px;
-    padding-left: 20px;
-}
-.main .prices .info .infor img{
-    width: 20px;
-}
-.main .prices .info .infor p{
-    font-size: 13px;
-}
-.main .prices .info button{
-    width:200px;
-    height: 50px;
+    margin-top: 5%;
+    margin-left: 15%;
     border-radius: 50px;
-    background-color: #04aa6d;
-    color: whitesmoke;
-    font-size: 15px;
+    background-color: #fff4a3;
+    font-size: 20px;
     border: none;
     cursor: pointer;
-    margin-top: 50px;
-}
-.main .prices .line{
-    width: 10px;
-    height: 30vh;
-}
-.main  .line img{
-    width: 100%;
-    height: 100%;
-}
-.free{
-    background-color: #282a35;
-    width: 20%;
-    height: 75vh;
-    position:absolute;
-    top: 230%;
-    left: 20%;
-    border-radius: 20px;
 
 }
- 
+.main  .free .btn{
+    width: 80%;
+    height: 8vh;
+    /* padding-top: 5%; */
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 15%;
+    border-radius: 50px;
+    background-color: #ffc0c7;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+
+}
+.main .total .free .text{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 30px;
+    padding-top: 50px;
+
+}
+.main  .free .text h2{
+    color: whitesmoke;
+    font-size: 25px;
+  }
+  .main  .free .text h3{
+    color: whitesmoke;
+    font-size: 25px;
+  }
+  .main  .free .text p{
+    color: whitesmoke;
+    font-size: 18px;
+  }
+  .main  .free .text1{
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 100%;
+      flex-direction: column;
+      gap: 10px;
+     
+  }
+  .main  .free .text1 .info{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+margin-left: 15%;
+  }
+ .main  .free .text1 .info img{
+     width: 20px;
+    }
+    .main  .free .text1 .info p{
+        color: whitesmoke;
+    }
+
+
+.main .total .costs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding-top: 3%;
+}
+.main .total .costs .cost{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+.main .total .costs  button{
+   
+        width: 45%;
+        height: 4vh;
+        background-color: #04aa6d;
+        border: none;
+        border-radius: 10px;
+        color: whitesmoke;
+        
+    }
+    
+
+.main .total .costs .cost h3{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+.main .total .item{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+.main .total .item .info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+.main .total .item .info img{
+
+    width: 25px;
+}
+.main .total .last{
+    /* padding-top: 500px; */
+}
